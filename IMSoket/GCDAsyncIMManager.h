@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface GCDAsyncIMManager : NSObject
-
+- (BOOL)connect;
+- (void)disConnect;
+- (void)sentMsg:(NSString *)msg;
++ (instancetype)share;
 @end

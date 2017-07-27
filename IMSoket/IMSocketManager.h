@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface IMSocketManager : NSObject
++ (instancetype)share ;
+- (void)connect;
+- (void)sendMsg:(NSString *)msg;
+- (void)disConnect;
 
 @end

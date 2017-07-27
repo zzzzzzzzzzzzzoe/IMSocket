@@ -15,6 +15,9 @@
 		04B6FB3B1EE925340060B2A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B6FB391EE925340060B2A1 /* LaunchScreen.storyboard */; };
 		04B6FB461EE925340060B2A1 /* IMSoketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6FB451EE925340060B2A1 /* IMSoketTests.m */; };
 		04B6FB511EE925350060B2A1 /* IMSoketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6FB501EE925350060B2A1 /* IMSoketUITests.m */; };
+		04B6FB601EE925900060B2A1 /* IMSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6FB5F1EE925900060B2A1 /* IMSocketManager.m */; };
+		04B6FB631EE94A940060B2A1 /* GCDAsyncIMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6FB621EE94A940060B2A1 /* GCDAsyncIMManager.m */; };
+		7DF87F880A649CB3A2420CD8 /* libPods-IMSoket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B28108FDFD0A3D37A281F9EB /* libPods-IMSoket.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		04B6FB4C1EE925350060B2A1 /* IMSoketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMSoketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B6FB501EE925350060B2A1 /* IMSoketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMSoketUITests.m; sourceTree = "<group>"; };
 		04B6FB521EE925350060B2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B6FB5E1EE925900060B2A1 /* IMSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSocketManager.h; sourceTree = "<group>"; };
+		04B6FB5F1EE925900060B2A1 /* IMSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSocketManager.m; sourceTree = "<group>"; };
+		04B6FB611EE94A940060B2A1 /* GCDAsyncIMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncIMManager.h; sourceTree = "<group>"; };
+		04B6FB621EE94A940060B2A1 /* GCDAsyncIMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncIMManager.m; sourceTree = "<group>"; };
+		B28108FDFD0A3D37A281F9EB /* libPods-IMSoket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IMSoket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D991491D661CE5776B05E417 /* Pods-IMSoket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMSoket.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMSoket/Pods-IMSoket.release.xcconfig"; sourceTree = "<group>"; };
+		FCD63BA43ED72B5D0AD1E22D /* Pods-IMSoket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMSoket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMSoket/Pods-IMSoket.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF87F880A649CB3A2420CD8 /* libPods-IMSoket.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				04B6FB441EE925340060B2A1 /* IMSoketTests */,
 				04B6FB4F1EE925350060B2A1 /* IMSoketUITests */,
 				04B6FB291EE925330060B2A1 /* Products */,
+				573CC89E3549909D59EB29B9 /* Pods */,
+				69002855622B671A4A1FB3CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +118,10 @@
 				04B6FB2F1EE925340060B2A1 /* AppDelegate.m */,
 				04B6FB311EE925340060B2A1 /* ViewController.h */,
 				04B6FB321EE925340060B2A1 /* ViewController.m */,
+				04B6FB5E1EE925900060B2A1 /* IMSocketManager.h */,
+				04B6FB5F1EE925900060B2A1 /* IMSocketManager.m */,
+				04B6FB611EE94A940060B2A1 /* GCDAsyncIMManager.h */,
+				04B6FB621EE94A940060B2A1 /* GCDAsyncIMManager.m */,
 				04B6FB341EE925340060B2A1 /* Main.storyboard */,
 				04B6FB371EE925340060B2A1 /* Assets.xcassets */,
 				04B6FB391EE925340060B2A1 /* LaunchScreen.storyboard */,
@@ -140,6 +157,23 @@
 			path = IMSoketUITests;
 			sourceTree = "<group>";
 		};
+		573CC89E3549909D59EB29B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCD63BA43ED72B5D0AD1E22D /* Pods-IMSoket.debug.xcconfig */,
+				D991491D661CE5776B05E417 /* Pods-IMSoket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69002855622B671A4A1FB3CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B28108FDFD0A3D37A281F9EB /* libPods-IMSoket.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04B6FB551EE925350060B2A1 /* Build configuration list for PBXNativeTarget "IMSoket" */;
 			buildPhases = (
+				A5C5558E6EB5CA65EB6AA3CB /* [CP] Check Pods Manifest.lock */,
 				04B6FB241EE925330060B2A1 /* Sources */,
 				04B6FB251EE925330060B2A1 /* Frameworks */,
 				04B6FB261EE925330060B2A1 /* Resources */,
+				0EE749886100C577EA64D476 /* [CP] Embed Pods Frameworks */,
+				D9929116A32937A27A8865D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +305,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EE749886100C577EA64D476 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMSoket/Pods-IMSoket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C5558E6EB5CA65EB6AA3CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9929116A32937A27A8865D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMSoket/Pods-IMSoket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04B6FB241EE925330060B2A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +360,8 @@
 			files = (
 				04B6FB331EE925340060B2A1 /* ViewController.m in Sources */,
 				04B6FB301EE925340060B2A1 /* AppDelegate.m in Sources */,
+				04B6FB601EE925900060B2A1 /* IMSocketManager.m in Sources */,
+				04B6FB631EE94A940060B2A1 /* GCDAsyncIMManager.m in Sources */,
 				04B6FB2D1EE925340060B2A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +509,7 @@
 		};
 		04B6FB561EE925350060B2A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD63BA43ED72B5D0AD1E22D /* Pods-IMSoket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IMSoket/Info.plist;
@@ -433,6 +521,7 @@
 		};
 		04B6FB571EE925350060B2A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D991491D661CE5776B05E417 /* Pods-IMSoket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IMSoket/Info.plist;
